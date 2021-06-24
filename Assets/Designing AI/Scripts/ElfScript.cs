@@ -22,7 +22,7 @@ namespace KieranAI1
             agent = gameObject.GetComponent<NavMeshAgent>();
             // FindObjectsOfType gets every instance of this component in the scene
             waypoints = FindObjectsOfType<ElfWaypoint>();
-            AgentAnimator = GetComponent<Animator>();
+            AgentAnimator = GetComponentInChildren<Animator>();
         }
 
         // Update is called once per frame
